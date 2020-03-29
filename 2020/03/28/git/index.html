@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="正则表达式, 王相富">
+    <meta name="keywords" content="git基本用法, 王相富">
     <meta name="description" content="真正的大师永远都怀着一颗学徒的心">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>正则表达式 | 王相富</title>
+    <title>git基本用法 | 王相富</title>
     <link rel="icon" type="image/png" href="/medias/logo2.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -240,12 +240,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/3.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/1.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">正则表达式</h1>
+                    <h1 class="description center-align post-title">git基本用法</h1>
                 </div>
             </div>
         </div>
@@ -362,12 +362,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E6%AD%A3%E5%88%99/">
-                                <span class="chip bg-color">正则</span>
-                            </a>
-                        
-                            <a href="/tags/%E6%B5%8B%E8%AF%95/">
-                                <span class="chip bg-color">测试</span>
+                            <a href="/tags/git/">
+                                <span class="chip bg-color">git</span>
                             </a>
                         
                     </div>
@@ -378,8 +374,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E6%AD%A3%E5%88%99/" class="post-category">
-                                正则
+                            <a href="/categories/git/" class="post-category">
+                                git
                             </a>
                         
                     </div>
@@ -408,23 +404,15 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>正则表达式：字符串匹配，查找等</p>
-<p>1.元字符（1个字母，符号，汉字等）<br>^：匹配字符串的开始<br>$：匹配字符串的结束<br>.：除\n之外的任何一个字符<br>-：范围 0-9 、a-z，A-Z\d：数字<br>\d：匹配数字0-9<br>\D： ^\d 匹配非数字<br>\s：匹配任意的空白符<br>\S：^\s 匹配非空白符<br>\b： 匹配单词的开始或结束       \babc：以adc开始的    abc\b：以abc结尾的     \babc\b：以abc开始并且以abc结尾的<br>\B ：^\b 匹配单词的非开始或结束<br>\w：匹配字母或数字或下划线或汉字<br>\W：^\w，除字母或数字或下划线或汉字的任何字符<br> [0-9a-zA-Z]  匹配任意一个数字和字母<br>[字符&amp;*.等] 不需要转义</p>
-<p>2.个数，必须配合元字符/表达式/字词使用</p>
-<ul>
-<li>重复任意次<br>？    0 /1个，有或者没有</li>
-</ul>
-<ul>
-<li>重复1次或更多次<br>{n}    重复n次<br>{n,}           重复n次或更多次<br>{n,m}        重复n到m次</li>
-</ul>
-<p>3.条件：<br>^ not<br>| or<br>&amp;&amp; and</p>
-<p>4.分组/子表达式：（）<br>每一对()会分配一个编号，使用()的捕获根据左括号的顺序从1开始自动编号<br>1.通过组号引用分组<br>    语法：\n<br>2.通过组名引用分组<br>    定义：(?<name>exp)<br>    使用：\k<name><br>3.无法引用的分组<br>    语法：(?:exp)<br>    注意：不为该分组分配组号，不计入组号</p>
-<p>5.贪婪与懒惰<br>贪婪匹配：尽可能多的匹配<br>懒惰匹配：尽可能少的匹配，用的较多<br>语法：次数+?<br>*？    重复任意次，但尽可能少重复<br>+？    重复1次或更多次，但尽可能少重复<br>?？    重复0/1次，但尽可能少重复<br>{n,}？        重复n次或更多次，但尽可能少重复<br>{n,m}？     重复n到m次，但尽可能少重复</p>
-<p>断言=真假/是否，零宽=不占用字符<br>6.零宽断言：对位置的匹配<br>    1.零宽度正预测先行断言：(?=exp)<br>        人话：断言此位置的后面能匹配表达式exp<br>            精简：后边必须干啥<br>    2.零宽度正回顾后发断言：(?&lt;=exp)<br>        人话：断言此位置的前面能匹配表达式exp<br>            精简：前边必须干啥</p>
-<p>7.负向零宽断言<br>    1.零宽度负正预测先行断言：(?!exp)<br>        人话：断言此位置的后面不能匹配表达式exp<br>            精简：后边必须不能干啥<br>    2.零宽度负正回顾后发断言：(?&lt;!exp)<br>        人话：断言此位置的前面不能匹配表达式exp<br>            精简：前边必须不能干啥</p>
-<p>8.冗长的平衡组和递归匹配<br>(?’group’) 把捕获的内容命名为group,并压入堆栈(Stack)<br>(?’-group’) 从堆栈上弹出最后压入堆栈的名为group的捕获内容，如果堆栈本来为空，则本分组的匹配失败<br>(?(group)yes|no) 如果堆栈上存在以名为group的捕获内容的话，继续匹配yes部分的表达式，否则继续匹配no部分<br>(?!) 零宽负向先行断言，由于没有后缀表达式，试图匹配总是失败</p>
-<p>9.注释<br>    1.(?#注释)<br>    2.开启Free-spacing，输入#注释</p>
-<p>c#代码：<br>using System.Text.RegularExpressions;<br>Regex re = new Regex(“正则表达式”);<br>MatchCollection matchs = re.Matches(“匹配字符串”);<br>Match match=re.Match(“匹配到的第一个结果”);<br>Regex.IsMatch(“”, “^0-9A-Za-z_.$”)</p>
+                <h3 id="基本流程"><a href="#基本流程" class="headerlink" title="基本流程"></a>基本流程</h3><p>1.下载 <a href="https://git-scm.com/downloads" target="_blank" rel="noopener">https://git-scm.com/downloads</a><br>2.安装<br>3.<br>① 把远程仓库同步到本地： git clone url</p>
+<p>②初始化仓库git init，服务器新建仓库，添加并同步至远程仓库<br>添加远程地址：git remote add origin URL<br>更改远程地址：git remote set-url origin url<br>同步： git push -u origin master<br>4.新建文件（在工作区）, git status 查看状态<br>5.提交至暂存区 git add 文件名/.<br>6.提交至本地仓库 git commit -m “说明”<br>7.提交至远程服务器 ： git push -u origin master/branch_name (-u在第一次提交时使用)<br>8.获取最新代码：git pull origin master/branch_name</p>
+<h3 id="分支"><a href="#分支" class="headerlink" title="分支"></a>分支</h3><ol>
+<li>创建分支并切换到分支： git checkout -b branch_name</li>
+<li>切换分支：git checkout branch_name</li>
+<li>基本流程：add–&gt;commit–&gt;push–&gt;pull</li>
+<li>合并分支<br>切换至需要合并到的分支：git checkout master<br>合并：git merge branch_name</li>
+</ol>
+<h3 id="其它命令"><a href="#其它命令" class="headerlink" title="其它命令"></a>其它命令</h3><p>Workspace：工作区 Index / Stage：暂存区 Repository：仓库区（或本地仓库） Remote：远程仓库<br>git config –list：查看所有配置<br>git config –global user.name/email/password “” 用户名等：新增配置<br>git clean -df：强制移除工作区新增文件<br>git checkout ./–file：移除工作区修改，删除<br>回退： <a href="https://blog.csdn.net/think2me/article/details/39056379" target="_blank" rel="noopener">https://blog.csdn.net/think2me/article/details/39056379</a><br>git config –global user.name “wxf”<br>git config –global user. email “<a href="mailto:1109575656@qq.com">1109575656@qq.com</a>“<br>git config –global user. password “”</p>
 
             </div>
             <hr/>
@@ -440,7 +428,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://yoursite.com" rel="external nofollow noreferrer">王相富</a>
+                    <a href="https://mumufu.cn" rel="external nofollow noreferrer">王相富</a>
                 </span>
             </div>
             <div class="reprint__type">
@@ -450,7 +438,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://yoursite.com/2020/03/28/test/">http://yoursite.com/2020/03/28/test/</a>
+                    <a href="https://mumufu.cn/2020/03/28/git/">https://mumufu.cn/2020/03/28/git/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -463,7 +451,7 @@
                     本博客所有文章除特別声明外，均采用
                     <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
                     许可协议。转载请注明来源
-                    <a href="http://yoursite.com" target="_blank">王相富</a>
+                    <a href="https://mumufu.cn" target="_blank">王相富</a>
                     !
                 </span>
             </div>
@@ -488,12 +476,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E6%AD%A3%E5%88%99/">
-                                    <span class="chip bg-color">正则</span>
-                                </a>
-                            
-                                <a href="/tags/%E6%B5%8B%E8%AF%95/">
-                                    <span class="chip bg-color">测试</span>
+                                <a href="/tags/git/">
+                                    <span class="chip bg-color">git</span>
                                 </a>
                             
                         </div>
@@ -534,53 +518,50 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2020/03/28/test/">
+                <a href="/2020/03/28/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="正则表达式">
+                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="搭建个人博客">
                         
-                        <span class="card-title">正则表达式</span>
+                        <span class="card-title">搭建个人博客</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            正则表达式：字符串匹配，查找等
-1.元字符（1个字母，符号，汉字等）^：匹配字符串的开始$：匹配字符串的结束.：除\n之外的任何一个字符-：范围 0-9 、a-z，A-Z\d：数字\d：匹配数字0-9\D： ^\d 匹配非数字\s：匹配任意
+                            使用hexo和git搭建个人博客
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-28
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-03-28
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E6%AD%A3%E5%88%99/" class="post-category">
-                                    正则
+                            <a href="/categories/hexo/" class="post-category">
+                                    hexo
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E6%AD%A3%E5%88%99/">
-                        <span class="chip bg-color">正则</span>
+                    <a href="/tags/git/">
+                        <span class="chip bg-color">git</span>
                     </a>
                     
-                    <a href="/tags/%E6%B5%8B%E8%AF%95/">
-                        <span class="chip bg-color">测试</span>
+                    <a href="/tags/hexo/">
+                        <span class="chip bg-color">hexo</span>
                     </a>
                     
                 </div>
@@ -594,20 +575,19 @@
                 本篇&nbsp;<i class="far fa-dot-circle"></i>
             </div>
             <div class="card">
-                <a href="/2020/03/28/test/">
+                <a href="/2020/03/28/git/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="正则表达式">
+                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="git基本用法">
                         
-                        <span class="card-title">正则表达式</span>
+                        <span class="card-title">git基本用法</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            正则表达式：字符串匹配，查找等
-1.元字符（1个字母，符号，汉字等）^：匹配字符串的开始$：匹配字符串的结束.：除\n之外的任何一个字符-：范围 0-9 、a-z，A-Z\d：数字\d：匹配数字0-9\D： ^\d 匹配非数字\s：匹配任意
+                            git基本用法
                         
                     </div>
                     <div class="publish-info">
@@ -618,8 +598,8 @@
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E6%AD%A3%E5%88%99/" class="post-category">
-                                    正则
+                            <a href="/categories/git/" class="post-category">
+                                    git
                                 </a>
                             
                             
@@ -630,12 +610,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E6%AD%A3%E5%88%99/">
-                        <span class="chip bg-color">正则</span>
-                    </a>
-                    
-                    <a href="/tags/%E6%B5%8B%E8%AF%95/">
-                        <span class="chip bg-color">测试</span>
+                    <a href="/tags/git/">
+                        <span class="chip bg-color">git</span>
                     </a>
                     
                 </div>
@@ -781,7 +757,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
             <span id="year">2019</span>
-            <a href="http://yoursite.com" target="_blank">王相富</a>
+            <a href="https://mumufu.cn" target="_blank">王相富</a>
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
             |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
             <br>
