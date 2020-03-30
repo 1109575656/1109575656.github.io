@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="搭建个人博客, 王相富">
+    <meta name="keywords" content="��, 王相富">
     <meta name="description" content="真正的大师永远都怀着一颗学徒的心">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>搭建个人博客 | 王相富</title>
+    <title>�� | 王相富</title>
     <link rel="icon" type="image/png" href="/medias/logo2.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -240,12 +240,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/13.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/8.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">搭建个人博客</h1>
+                    <h1 class="description center-align post-title">��</h1>
                 </div>
             </div>
         </div>
@@ -362,12 +362,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/git/">
-                                <span class="chip bg-color">git</span>
+                            <a href="/tags/%D7%AA%EF%BF%BD%EF%BF%BD/">
+                                <span class="chip bg-color">ת��</span>
                             </a>
                         
-                            <a href="/tags/hexo/">
-                                <span class="chip bg-color">hexo</span>
+                            <a href="/tags/Sql-server/">
+                                <span class="chip bg-color">Sql server</span>
                             </a>
                         
                     </div>
@@ -378,8 +378,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/hexo/" class="post-category">
-                                hexo
+                            <a href="/categories/%D7%AA%EF%BF%BD%EF%BF%BD/" class="post-category">
+                                ת��
                             </a>
                         
                     </div>
@@ -391,7 +391,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-03-28
+                    2020-03-30
                 </div>
                 
 
@@ -408,14 +408,42 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="一-nodejs"><a href="#一-nodejs" class="headerlink" title="一.nodejs"></a>一.nodejs</h3><p>1.安装<a href="http://nodejs.cn/download" target="_blank" rel="noopener">nodejs</a><br>2.使用node -v 查看是否安装成功</p>
-<h3 id="二-安装git"><a href="#二-安装git" class="headerlink" title="二.安装git"></a>二.安装git</h3><p>1.安装<a href="https://git-scm.com" target="_blank" rel="noopener">git</a><br>2.生成SSH，执行ssh-keygen -t rsa -C “你的GitHub账户”<br>     生成好的密钥位置：C:\Users\登陆用户名.ssh<br>3.在github的Settings的SSH and GPG keys中新增生成好的.pub密钥</p>
-<h3 id="三-github设置"><a href="#三-github设置" class="headerlink" title="三.github设置"></a>三.github设置</h3><p>1.新建仓库，格式：用户名.github.io<br><img src="/mdimags/hexo/1.png" alt="1.png"><br>2.启用github page<br><img src="/mdimags/hexo/2.jpg" alt="2.jpg"><br>3.如果需要绑定自己域名的话，在custom domain填入自己的域名<br><img src="/mdimags/hexo/3.png" alt="3.png"><br>4.添加DNS解析</p>
-<h3 id="四-hexo配置"><a href="#四-hexo配置" class="headerlink" title="四.hexo配置"></a>四.hexo配置</h3><p>1.安装hexo，npm install -g hexo<br>2.查看是否成功,输入hexo<br>3.初始化blog目录，hexo init blog<br>4.进入blog目录，安装依赖文件，npm install<br>5.部署形成文件，hexo generate<br>6.运行hexo服务，hexo server<br>7.输入<a href="http://localhost:4000/，查看默认博客主题" target="_blank" rel="noopener">http://localhost:4000/，查看默认博客主题</a></p>
-<h3 id="五-hexo配置部署"><a href="#五-hexo配置部署" class="headerlink" title="五.hexo配置部署"></a>五.hexo配置部署</h3><p>1.打开_config.yml，编辑deploy属性<br>deploy:<br>   type: git<br>   repo: <a href="https://github.com/1109575656/1109575656.github.io" target="_blank" rel="noopener">https://github.com/1109575656/1109575656.github.io</a><br>   branch: master<br>2.安装hexo-deployer-git插件，npm install hexo-deployer-git –save<br>3.部署<br>hexo clean–&gt;hexo g<br>启动本地预览：hexo s，输入<a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a><br>部署到github：hexo d</p>
-<h3 id="六-遇到的坑"><a href="#六-遇到的坑" class="headerlink" title="六.遇到的坑"></a>六.遇到的坑</h3><p>1.安装hexo时太慢，手动配置代理<br>npm config set registry <a href="http://registry.cnpmjs.org" target="_blank" rel="noopener">http://registry.cnpmjs.org</a><br>2.配置文件中的冒号后必须加一个空格，否则报错，网站无法正常启动<br>3.绑定域名的每次发布后，都会把CNAME文件替换掉<br>    可以在source文件夹新建CNAME，可以解决</p>
-<h3 id="七-参考"><a href="#七-参考" class="headerlink" title="七.参考"></a>七.参考</h3><p>1.<a href="https://blog.csdn.net/qq_35843543/article/details/79796896" target="_blank" rel="noopener">https://blog.csdn.net/qq_35843543/article/details/79796896</a><br>2.<a href="https://github.com/limedroid/HexoLearning" target="_blank" rel="noopener">https://github.com/limedroid/HexoLearning</a></p>
-<h3 id="八-主题"><a href="#八-主题" class="headerlink" title="八.主题"></a>八.主题</h3><p>1.<a href="https://github.com/litten/hexo-theme-yilia" target="_blank" rel="noopener">https://github.com/litten/hexo-theme-yilia</a><br>2.<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank" rel="noopener">https://github.com/blinkfox/hexo-theme-matery</a></p>
+                <h3 id="һ-Ϊʲo������"><a href="#һ-Ϊʲo������" class="headerlink" title="һ.Ϊʲô������"></a>һ.Ϊʲô������</h3><p>ԭ�򣺶���û�ͬʱ�����ݿ�Ĳ�������ʱ������������ݲ�һ�µ�����:</p>
+<h4 id="��ʧ����"><a href="#��ʧ����" class="headerlink" title="��ʧ����"></a>��ʧ����</h4><p>ͬʱ���£�ǰһ�����±�����</p>
+<h4 id="���"><a href="#���" class="headerlink" title="���"></a>���</h4><p>��ȡ�����������������޸��е����� ���޸��������ֵ�ͻ�䣩</p>
+<h4 id="�����ظ���"><a href="#�����ظ���" class="headerlink" title="�����ظ���"></a>�����ظ���</h4><p>1.��һ�������� ���ζ�ȡĳһ���̶�������ĳ��ֵ ��һ��<br>2.�ص�����update<br>3.�������⣺<br>    ͬһ�������У�����ȡ֮�����ݱ�������update֮���ٴζ�ȡ��ʱ�򣬽���Ͳ�һ��</p>
+<h4 id="��Ӱ��"><a href="#��Ӱ��" class="headerlink" title="��Ӱ��"></a>��Ӱ��</h4><p>1.�ص�����insert��delete<br>2.�������⣺<br>    ͬһ�������У�����ȡ֮����������insert/delete���ݣ��ٴζ�ȡ��ʱ�򣬾ͻ����һ�����ݣ����ǻö�</p>
+<h3 id="��-��������"><a href="#��-��������" class="headerlink" title="��.��������"></a>��.��������</h3><h4 id="������S"><a href="#������S" class="headerlink" title="������S"></a>������S</h4><p>1.���ڲ����Ļ򲻸������ݵĲ�����ֻ������������ SELECT ��䡣</p>
+<h4 id="��ռ��-������X"><a href="#��ռ��-������X" class="headerlink" title="��ռ��/������X"></a>��ռ��/������X</h4><p>1.���������޸Ĳ��������� INSERT��UPDATE �� DELETE��ȷ������ͬʱͬһ��Դ���ж��ظ��¡�</p>
+<h4 id="������-I"><a href="#������-I" class="headerlink" title="������ I"></a>������ I</h4><p>1.���ڽ������Ĳ�νṹ��������������Ϊ�������� (IS)���������� (IX) �Լ��������������� (SIX)��</p>
+<h4 id="������U"><a href="#������U" class="headerlink" title="������U"></a>������U</h4><p>1.���ڿɸ��µ���Դ�С���ֹ������Ự�ڶ�ȡ�������Լ������ܽ��е���Դ����ʱ����������ʽ��������</p>
+<h4 id="gʽ��-�ܹ���SCH"><a href="#gʽ��-�ܹ���SCH" class="headerlink" title="ģʽ��/�ܹ���SCH"></a>ģʽ��/�ܹ���SCH</h4><p>1.��ִ�������ڱ��ܹ��Ĳ���ʱʹ�á��ܹ���������Ϊ���ܹ��޸� (Sch-M) �ͼܹ��ȶ��� (Sch-S)��</p>
+<h4 id="������������BU"><a href="#������������BU" class="headerlink" title="������������BU"></a>������������BU</h4><p>1.����д������������ݲ�ָ���� TABLOCK ��ʾʱʹ�á�</p>
+<h3 id="��-��������-1"><a href="#��-��������-1" class="headerlink" title="��.��������"></a>��.��������</h3><p>�������Ǳ�����Ŀ��Ĵ�С,��������С�򲢷��Ը�,��������,�������ȴ��򲢷��Ե͵�����С</p>
+<p>SQL Server֧�ֵ������ȿ��Է�ΪΪ�С�ҳ����������Χ���������������ݿ��ȡ��</p>
+<p>| ���� | ˵��  |</p>
+<p>| —- | —- |</p>
+<p>| RID | �б�ʶ�������ڵ����������е�һ�С� |</p>
+<p>| KEY��������| �� �����е����������ڱ����ɴ��������еļ���Χ��| </p>
+<p>| PAGE 8����| ����ǧ�ֽ� (KB) ������ҳ������ҳ��| </p>
+<p>| EXTENT��| ���� ���ڵİ˸�����ҳ������ҳ���ɵ�һ�顣| </p>
+<p>| TABLE����| ���� �����������ݺ��������ڵ���������| </p>
+<p>| DATABASE��| �� ���ݿ⡣| </p>
+<p>�������Ⱥ��������Ͷ�����SQL Server���п��Ƶģ���Ȼ��Ҳ����ʹ������ʾ�������Ƽ�������������ݿ�������������Խ�����ȵ�����ɸ���������������ڴ����ȵ�����Ҫ���ٵ�������˻��������ܡ���С���ȵ�����������������Դ��������������������˲�������ͬʱ��������Ҳ��������ܵ��½��� </p>
+<h3 id="��-����Ӧ��"><a href="#��-����Ӧ��" class="headerlink" title="��.����Ӧ��"></a>��.����Ӧ��</h3><p>��ʹ��SQLʱ���󶼻��������������⣬��Updateһ����¼ʱ����Ҫͨ��Select����������ֵ��������Ȼ����ͨ�����ֵ��ִ���޸Ĳ�����</p>
+<p>�������ϲ����ŵ����߳��в�������ʱ��������⣺ĳ�߳�select��һ����¼����û���ü�updateʱ����һ���߳���Ȼ���ܻ����select��ͬһ����¼��</p>
+<p> һ�����취����ʹ��������������ϻ��ƣ�</p>
+<ol>
+<li>��select����������, ����select���, �����ͷ���</li>
+<li>Ҫ��ֹ��һ��select , ��Ҫ�ֹ�����, select Ĭ���ǹ�����, select֮��Ĺ������ǲ���ͻ��, ����, ���ֻ�ǹ�����, ��ʹ��û���ͷ�, ��һ��selectһ�������¹�����, �Ӷ�select������ </li>
+</ol>
+<p>BEGIN TRAN<br>SELECT * FROM Table WITH(UPDLOCK)<br>–���� SELECT * FROM Table WITH(TABLOCKX, READPAST) �������������<br>UPDATE ….<br>COMMIT TRAN</p>
+<p>����Select�� With (NoLock)�����������,�ڲ�ѯ�����ʹ�� NOLOCK �� READPAST<br>����һ�����ݿ��������쳣ʱ������һ���������ʹ�� NOLOCK ���� READPAST ���й� NOLOCK �� READPAST��һЩ����֪ʶ�㣺<br>���ڷ����е��ϸ�Ҫ���������ҵ��������¼�г��ֻ��߲�����ĳ����¼�������ڿ����̷�Χ�ڣ���������������Ӧ�����ȿ��ǣ�����ҵ���߼��Ƿ������̳��ֻ��߲�����ĳЩ��¼��������Ѱ���˫����������������ν��������⡣<br>NOLOCK �� READPAST ���Ǵ�����ѯ�����롢ɾ���Ȳ���ʱ�����Ӧ����ס�����ݼ�¼��������ʱ��һ��Ҫע��NOLOCK �� READPAST�ľ����ԣ�ȷ�����ҵ���߼�����������Щ��¼�ĳ��ֻ��߲����֣�<br>����˵��</p>
+<p>1.NOLOCK ���ܰ�û���ύ���������Ҳ��ʾ����<br>2.READPAST ��ѱ���ס���в���ʾ����</p>
+<p>��ʹ�� NOLOCK �� READPAST ���� Select ����ʱ�����п��ܱ���������(���� ID **)����һ�����̱������� �� ��Դ�ϣ������ѱ�ѡ����������Ʒ��</p>
+<p>SELECT * FROM Table WITH(NOLOCK)<br>SELECT * FROM Table WITH(READPAST)</p>
+<p>��������</p>
+<p>HOLDLOCK����������������������ɣ�����������Ӧ�ı����л�����ҳ������Ҫʱ�������ͷ�����HOLDLOCK��ͬ�� SERIALIZABLE��<br>NOLOCK ��Ҫ���������������Ҳ�Ҫ�ṩ������������ѡ����Чʱ�����ܻ��ȡδ�ύ�������һ���ڶ�ȡ�м�ع���ҳ�档�п��ܷ����������Ӧ���� SELECT ��䡣<br>PAGLOCK����ͨ��ʹ�õ��������ĵط�����ҳ����<br>READCOMMITTED�������������ύ�����뼶���������ͬ��������ִ��ɨ�衣Ĭ������£�SQL Server 2000�ڴ˸��뼶���ϲ�����<br>READPAST�����������С���ѡ����������������������������У���Щ��ƽ������ʾ�ڽ�����ڣ�������������������ʹ��ȴ����������ͷ�����Щ���ϵ����� READPAST ����ʾ���������������ύ�����뼶������񣬲���ֻ���м���֮���ȡ���������� SELECT ��䡣<br>READUNCOMMITTED����ͬ�� NOLOCK��<br>REPEATABLEREAD�����������ڿ��ظ������뼶���������ͬ��������ִ��ɨ�衣<br>ROWLOCK��ʹ���м���������ʹ�����ȸ��ֵ�ҳ�����ͱ�������<br>SERIALIZABLE�����������ڿɴ��ж����뼶���������ͬ��������ִ��ɨ�衣��ͬ�� HOLDLOCK��<br>TABLOCK��ʹ�ñ����������ȸ�ϸ���м�����ҳ��������������ǰ��SQL Server һֱ���и��������ǣ����ͬʱָ�� HOLDLOCK����ô���������֮ǰ��������һֱ���С�<br>TABLOCKX ʹ�ñ������������������Է�ֹ���������ȡ����±������������������ǰһֱ���С�<br>UPDLOCK����ȡ��ʱʹ�ø�����������ʹ�ù�������������һֱ��������������Ľ�����UPDLOCK�����ŵ�����������ȡ���ݣ��������������񣩲����Ժ�������ݣ�ͬʱȷ���Դ��ϴζ�ȡ���ݺ�����û�б����ġ�<br>XLOCK��ʹ����������һֱ���ֵ�����䴦�������������ϵ��������ʱ������ʹ�� PAGLOCK �� TABLOCK ָ������������������������������ʵ���������ȡ�</p>
 
             </div>
             <hr/>
@@ -441,7 +469,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://mumufu.cn/2020/03/28/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">https://mumufu.cn/2020/03/28/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</a>
+                    <a href="https://mumufu.cn/2020/03/30/%E9%94%81/">https://mumufu.cn/2020/03/30/%E9%94%81/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -479,12 +507,12 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/git/">
-                                    <span class="chip bg-color">git</span>
+                                <a href="/tags/%D7%AA%EF%BF%BD%EF%BF%BD/">
+                                    <span class="chip bg-color">ת��</span>
                                 </a>
                             
-                                <a href="/tags/hexo/">
-                                    <span class="chip bg-color">hexo</span>
+                                <a href="/tags/Sql-server/">
+                                    <span class="chip bg-color">Sql server</span>
                                 </a>
                             
                         </div>
@@ -525,46 +553,52 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2020/03/28/%E7%BD%91%E7%AB%99%E5%88%86%E4%BA%AB/">
+                <a href="/2020/03/30/%E9%94%81/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="网站分享">
+                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="��">
                         
-                        <span class="card-title">网站分享</span>
+                        <span class="card-title">��</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            提升技能或效率的网站分享
+                            Sql server��ʹ�ã�ת����https://www.cnblogs.com/taiyonghai/p/5674462.html
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-03-28
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-30
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E5%88%86%E4%BA%AB/" class="post-category">
-                                    分享
+                            <a href="/categories/%D7%AA%EF%BF%BD%EF%BF%BD/" class="post-category">
+                                    ת��
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E5%88%86%E4%BA%AB/">
-                        <span class="chip bg-color">分享</span>
+                    <a href="/tags/%D7%AA%EF%BF%BD%EF%BF%BD/">
+                        <span class="chip bg-color">ת��</span>
+                    </a>
+                    
+                    <a href="/tags/Sql-server/">
+                        <span class="chip bg-color">Sql server</span>
                     </a>
                     
                 </div>
@@ -578,19 +612,19 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/03/28/git/">
+                <a href="/2020/03/28/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="git基本用法">
+                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="正则表达式">
                         
-                        <span class="card-title">git基本用法</span>
+                        <span class="card-title">正则表达式</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            git基本用法
+                            正则表达式语法
                         
                     </div>
                     <div class="publish-info">
@@ -601,8 +635,8 @@
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/git/" class="post-category">
-                                    git
+                            <a href="/categories/%E6%AD%A3%E5%88%99/" class="post-category">
+                                    正则
                                 </a>
                             
                             
@@ -612,8 +646,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/git/">
-                        <span class="chip bg-color">git</span>
+                    <a href="/tags/%E6%AD%A3%E5%88%99/">
+                        <span class="chip bg-color">正则</span>
                     </a>
                     
                 </div>
